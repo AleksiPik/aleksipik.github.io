@@ -10,7 +10,8 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> 
 </head>
 
 <body>
@@ -21,8 +22,14 @@
     <div class="container nav-container">
 
       <div class="logo">
-        My portfolio.
-      </div>
+
+  <img src="my-photo.jpg" alt="My-photo">
+
+  <span>
+    My portfolio.
+  </span>
+
+</div>
 
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
@@ -41,10 +48,13 @@
     <div class="container hero-content">
 
       <h1>
-        Hi, I'm <span>Aleksi Pikul</span>
+        Hi, I'm <span>Aleksi</span>
       </h1>
+      <h2>
+  <span class="typing"></span>
+</h2>
 
-      <p>
+      <p class="p-hero">
         Building data-driven solutions for logistics and business optimization.
       </p>
 
@@ -204,25 +214,53 @@ by region and sales territory.
         <div class="project-card">
 
           <div class="project-image">
-            <a href="project1-img.png" target="_blank">
-  <img src="project1-img.png" alt="Project.1">
+            <a href="#">
+  <img src="project3-img.png" alt="Project.3">
 </a>
           </div>
 
           <div class="project-content">
 
-            <h3>Consumer Insights Project</h3>
+            <h3>Personal Portfolio Website</h3>
 
             <p>
-              Explored customer behavior patterns and generated
-              strategic recommendations.
+              Designed and developed a responsive personal portfolio website using HTML and CSS
             </p>
 
             <div class="project-tags">
 
-              <div class="tag">Research</div>
-              <div class="tag">Finance</div>
-              <div class="tag">Strategy</div>
+              <div class="tag">HTML</div>
+              <div class="tag">CSS</div>
+              
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- CARD 4 -->
+        <div class="project-card">
+
+          <div class="project-image">
+            <a href="project4-img.png" target="_blank">
+  <img src="project4-img.png" alt="Project.4">
+</a>
+          </div>
+
+          <div class="project-content">
+
+            <h3>Automated Work Hours Reporting System in Excel</h3>
+
+            <p>
+              Developed an automated Excel-based reporting system to calculate working hours, overtime,
+              and attendance discrepancies using formulas.
+            </p>
+
+            <div class="project-tags">
+
+              <div class="tag">Reporting</div>
+              <div class="tag">Excel</div>
+              
 
             </div>
 
@@ -269,6 +307,23 @@ by region and sales territory.
     © 2026 Aleksi Pikul. All rights reserved.
     
   </footer>
+<script>
 
+var typed = new Typed(".typing", {
+
+  strings: [
+    "Supply Chain Management",
+    "Data Analytics",
+    "Business Solutions",
+    "Procurement & Logistics"
+  ],
+
+  typeSpeed:60,
+  backSpeed:40,
+  loop:true
+
+});
+
+</script>
 </body>
 </html>
