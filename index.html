@@ -38,7 +38,16 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
 
+      <div class="burger">
+
+  <span></span>
+  <span></span>
+  <span></span>
+
+</div>
+
     </div>
+    
   </nav>
 
   <!-- HERO -->
@@ -106,15 +115,16 @@
           <p>My Skills:</p>
           <div class="skills">
 
-            <div class="skill">MS Office 365</div>
-            <div class="skill">Power BI</div>
-            <div class="skill">SQL</div>
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">Analytics</div>
-            <div class="skill">GitHub</div>
-            <div class="skill">ERP</div>
-            <div class="skill">Excel</div>
+            <div class="skill office">MS Office 365</div>
+            <div class="skill power">Power BI</div>
+            <div class="skill sql">SQL</div>
+            <div class="skill html">HTML</div>
+            <div class="skill css">CSS</div>
+            <div class="skill analytics">Analytics</div>
+            <div class="skill github">GitHub</div>
+            <div class="skill erp">ERP</div>
+            <div class="skill excel">Excel</div>
+            <div class="skill javascript">JavaScript</div>
 
           </div>
 
@@ -231,6 +241,7 @@ by region and sales territory.
 
               <div class="tag">HTML</div>
               <div class="tag">CSS</div>
+              <div class="tag">JavaScript</div>
               
 
             </div>
@@ -325,5 +336,19 @@ var typed = new Typed(".typing", {
 });
 
 </script>
+
+<script>
+
+const burger = document.querySelector(".burger");
+const navLinks = document.querySelector(".nav-links");
+
+burger.addEventListener("click", () => {
+
+  navLinks.classList.toggle("active");
+
+});
+
+</script>
+
 </body>
 </html>

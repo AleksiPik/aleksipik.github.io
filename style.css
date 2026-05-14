@@ -82,6 +82,26 @@
       color:#38bdf8;
     }
 
+    .burger{
+  display:none;
+  flex-direction:column;
+  gap:6px;
+
+  cursor:pointer;
+}
+
+.burger span{
+  width:28px;
+  height:3px;
+
+  background:white;
+
+  border-radius:10px;
+
+  transition:0.3s;
+}
+
+
     /* HERO */
 
     .hero{
@@ -244,8 +264,73 @@
       border-radius:10px;
       color:#38bdf8;
       font-size:0.9rem;
+      animation:floatSkill 3s ease-in-out infinite;
+      transition:0.3s;
     }
+    .skill:hover{
 
+  transform:translateY(-5px) scale(1.05);
+
+  box-shadow:0 10px 30px rgba(56,189,248,0.3);
+
+  background:#38bdf8;
+
+  color:#0f172a;
+
+}
+
+    .office{
+  animation-delay:0.2s;
+}
+
+.power{
+  animation-delay:0.5s;
+}
+
+.sql{
+  animation-delay:1.2s;
+}
+.html{
+  animation-delay:0.3s;
+}
+
+.css{
+  animation-delay:0.5s;
+}
+
+.analytics{
+  animation-delay:1.4s;
+}
+.github{
+  animation-delay:0.6s;
+}
+
+.erp{
+  animation-delay:0.7s;
+}
+
+.excel{
+  animation-delay:1s;
+}
+.javascript{
+  animation-delay:1.5s;
+}
+
+@keyframes floatSkill{
+
+  0%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-8px);
+  }
+
+  100%{
+    transform:translateY(0);
+  }
+
+}
     /* PROJECTS */
 
     .projects-grid{
@@ -393,4 +478,37 @@
 .typing{
   color:#38bdf8;
   font-weight:600;
+}
+
+@media(max-width:768px){
+
+  .burger{
+    display:flex;
+  }
+
+  .nav-links{
+
+    position:absolute;
+
+    top:80px;
+    right:-100%;
+
+    width:250px;
+
+    background:#1e293b;
+
+    flex-direction:column;
+
+    padding:30px;
+
+    transition:0.4s;
+
+    border-radius:20px;
+
+  }
+
+  .nav-links.active{
+    right:20px;
+  }
+
 }
